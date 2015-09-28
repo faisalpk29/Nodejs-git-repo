@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	h1 Please Login below
+	p Please register using the form below
+	form(method='post',action='/users/login')
+		
+		.form-group
+			label User Name
+			input.form-control(name='username',type='text',placeholder='Enter Username')
+		.form-group
+			label Password
+			input.form-control(name='password',type='password',placeholder='Enter Password')
+		
+		input.btn.btn-default(name='submit',type='submit',value='Log In')
