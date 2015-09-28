@@ -68,9 +68,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-console.log('Directory Name : '+__dirname+ '/public/stylesheets');
-app.use(express.static(path.join(__dirname + '\\public\\stylesheets')));
-app.use(express.static(path.join(__dirname + '\\public\\javascripts')));
+//console.log('Directory Name : '+__dirname+ '/public/stylesheets');
+//app.use(express.static(path.join(__dirname + '\\public\\stylesheets')));
+//app.use(express.static(path.join(__dirname + '\\public\\javascripts')));
 app.use(flash());
 
 app.use(require('connect-flash')());
