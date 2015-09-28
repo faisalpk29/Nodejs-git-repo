@@ -22,18 +22,17 @@ body
 					li(class=(title=='Members'? 'active':''))
 						a(href='/') Members
 					if !user
-					li(class=(title=='Register'? 'active':''))
-						a(href='/users/register') Register
-					li(class=(title=='Login'? 'active':''))
-						a(href='/users/login') Log In
-						if user
-				ul.nav.navbar-nav.navbar-right
-
-					li
-						a(href='/users/logout') Logout
+						li(class=(title=='Register'? 'active':''))
+							a(href='/users/register') Register
+						li(class=(title=='Login'? 'active':''))
+							a(href='/users/login') Log In
+					if user
+						ul.nav.navbar-nav.navbar-right
+							li
+								a(href='/users/logout') Logout
 	// /.nav-collapse
 .container
-	aside#tooltips
+	
 	!= messages()
 	block content
 	
